@@ -6,7 +6,7 @@
         <p><a href="{% url 'logout' %}">Chqib ketish</a></p>
     {% else %}
         <p>Saytga kirmagansiz</p>
-        <a href="{% url 'login' %}">Kirish</a>
+        <a href="{% url 'login' %}">Kirish</a> |
         <a href="{% url 'signup' %}">Ro'yxatdan o'tish</a>
     {% endif %}
 {% endblock content %}
