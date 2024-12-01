@@ -3,7 +3,9 @@
 {% block content %}
     {% if user.is_authenticated %}
         {{ user.username }}!
-        <p><a href="{% url 'logout' %}">Chqib ketish</a></p>
+        <button>
+        <p><a href="{% url 'logout' %}">Chiqib ketish</a></p>
+        </button>
     {% else %}
         <p>Saytga kirmagansiz</p>
         <a href="{% url 'login' %}">Kirish</a> |
